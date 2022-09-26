@@ -5,7 +5,7 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 // const element = <FontAwesomeIcon icon={faCoffee} />
 
-const Product = ({ product, onClickHandaler }) => {
+const Product = ({ product, handleAddToCart }) => {
     // console.log(props);
     // const { product, onClickHandaler } = props;
     const { id, category, name, seller, price, stock, ratings, ratingsCount, img, shipping, quantity } = product;
@@ -21,7 +21,7 @@ const Product = ({ product, onClickHandaler }) => {
                 <h6 className='product_rating' >Rating: {ratings}</h6>
             </div>
 
-            <button className='add_to_cart_btn' onClick={() => onClickHandaler(product)} >
+            <button className='add_to_cart_btn' onClick={() => handleAddToCart(product)} >
                 Add to Cart <FontAwesomeIcon icon={faCartPlus} />
             </button>
         </div>

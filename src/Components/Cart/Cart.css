@@ -1,1 +1,4 @@
-.cart_info {}
+.cart_info {
+    position: sticky;
+    top: 0;
+}
